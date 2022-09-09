@@ -2,8 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: trivial-go-web-app-ingress
-  annotations:
-    ingress.kubernetes.io/rewrite-target: /
+  namespace: default
 spec:
   rules:
   - http:
