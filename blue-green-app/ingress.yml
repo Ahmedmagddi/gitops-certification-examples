@@ -7,8 +7,7 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
 spec:
   rules:
-  - host: example.mydomain.com
-    http:
+  - http:
       paths:
         - path: /active
           pathType: Prefix
